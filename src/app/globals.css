@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -30,4 +32,60 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.linkName {
+  font-family: "Montserrat", sans-serif;
+  /* font-size: 1.5rem; */
+  /* font-weight: 700; */
+  /* margin-right: 1rem; */
+  color: #f56565;
+}
+
+.linkName:hover {
+  color: #f56565;
+  transition: color 0.3s ease;
+}
+
+/* Projects */
+.projectSectionHeading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+
+}
+
+.projectSectionHeading:hover {
+  color: #f56565;
+  transition: color 0.3s ease;
+}
+
+.projectImage {
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+  border: 2px solid rgba(255,255,255,0.1  );
+}
+
+.projectImage:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
