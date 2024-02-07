@@ -35,6 +35,14 @@ body {
 }
 
 /* Navbar */
+.navLogo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 1rem;
+  color: #f56565;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -50,6 +58,7 @@ body {
   position: fixed;
   width: 100%;
   z-index: 100;
+  margin: 0 auto;
 }
 
 .linkName {
@@ -57,21 +66,93 @@ body {
   /* font-size: 1.5rem; */
   /* font-weight: 700; */
   /* margin-right: 1rem; */
-  color: #f56565;
-}
+  color: #f56565;}
 
 .linkName:hover {
-  color: #f56565;
+  color: #fff;
   transition: color 0.3s ease;
 }
+
+/* Home Page */
+.hpHeader {
+  font-family: "Montserrat", sans-serif;
+  /* font-size: 3rem; */
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding-top: 5rem;
+}
+.homePageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 7rem 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  border: 2px solid rgba(255,255,255,0.1  );
+  /* margin: 0 auto; */
+  max-width: fit-content;
+  min-width: 100%;
+}
+.portfolioSection1,
+.portfolioSection2,
+.portfolioSection3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  border: 2px solid rgba(255,255,255,0.1  );
+  margin: 0 auto;
+}
+.portfolioContainer1, 
+.portfolioContainer2,
+.portfolioContainer3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  border: 2px solid rgba(255,255,255,0.1  );
+  margin: 0 auto;
+}
+
 
 /* Projects */
 .projectSectionHeading {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 1rem;
-
+  margin-bottom: 1.5rem;
+  padding-top: 5rem;
 }
 
 .projectSectionHeading:hover {
@@ -82,10 +163,419 @@ body {
 .projectImage {
   border-radius: 1rem;
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
-  border: 2px solid rgba(255,255,255,0.1  );
+  border: 2px solid rgba(255,255,255,0.1);
+  margin: 1rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  object-fit: cover;
+  object-position: center;
+  width: 300px;
+  /* height: 200px; */
 }
 
 .projectImage:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
+}
+
+
+/* About */
+.mainAboutContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 2rem;
+  /* margin-top: 5rem; */
+  /* margin-bottom: 5rem; */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  border: 2px solid rgba(255,255,255,0.1  );
+  margin: 0 auto;
+}
+.portraitImageContainer {
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+  border: 2px solid rgba(255,255,255,0.1  );
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+  padding: 1rem;
+  /* height: 200px; */
+  object-fit: cover;
+  object-position: center;
+}
+.portraitImage {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+  border: 2px solid rgba(255,255,255,0.1  );
+}
+.aboutTextContainer {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  padding: 1rem 2rem;
+}
+.aboutName {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.aboutParagraph {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+/* Resume */
+.resumeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 2rem;
+  /* margin-top: 5rem; */
+  /* margin-bottom: 5rem; */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  border: 2px solid rgba(255,255,255,0.1  );
+  margin: 0 auto;
+}
+.myName {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding-top: 5rem;
+}
+.myContact {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.myObjective {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  /* padding-top: 1rem; */
+}
+a.myContact,
+a.myPhone,
+a.myLinkedIn,
+a.myGithub,
+a.myEmail,
+a.myPhotographyPortfolio {
+  color: #f56565;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a.myContact:hover,
+a.myPhone:hover,
+a.myLinkedIn:hover,
+a.myGithub:hover,
+a.myEmail:hover,
+a.myPhotographyPortfolio:hover {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+/* Code */
+.markdownFormatted {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.2rem; /* Prev: 1.5rem */
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.resumeDivider {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid rgba(255,255,255,0.1  );
+  width: 100%;
+}
+.markdown {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.markdown h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.markdown h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.markdown h3 {
+  font-size: 1.17em;
+  margin-bottom: 0.5em;
+}
+
+.markdown h4 {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+.markdown h5 {
+  font-size: 0.83em;
+  margin-bottom: 0.5em;
+}
+
+.markdown h6 {
+  font-size: 0.67em;
+  margin-bottom: 0.5em;
+}
+
+.markdown p {
+  margin: 0 0 1em 0;
+}
+
+.markdown ul,
+.markdown ol {
+  margin-bottom: 1em;
+  padding-left: 2em;
+}
+
+.markdown ul li {
+  list-style-type: disc;
+}
+
+.markdown ol li {
+  list-style-type: decimal;
+}
+
+.markdown a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.markdown a:hover {
+  text-decoration: underline;
+}
+
+.markdown strong {
+  font-weight: bold;
+}
+
+.markdown em {
+  font-style: italic;
+}
+
+.markdown code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f8f9fa;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+.markdown pre {
+  background-color: #f8f9fa;
+  padding: 0.5em;
+  overflow-x: auto;
+  border-radius: 5px;
+}
+
+.markdown blockquote {
+  border-left: 4px solid #adb5bd;
+  padding-left: 1em;
+  margin-left: 0;
+  color: #6c757d;
+}
+.code-block {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f8f9fa;
+  color: #000;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+.code-block .keyword {
+  color: #00008b; /* Dark blue */
+}
+
+.code-block .comment {
+  color: #008000; /* Green */
+}
+
+.code-block .string {
+  color: #a31515; /* Red */
+}
+
+.code-block .number {
+  color: #0000ff; /* Blue */
+}
+
+.code-block .operator {
+  color: #000; /* Black */
+}
+
+.code-block .punctuation {
+  color: #000; /* Black */
+}
+
+.code-block .identifier {
+  color: #000; /* Black */
+}
+
+
+/* Contact */
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 2rem;
+  /* margin-top: 5rem; */
+  /* margin-bottom: 5rem; */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  border: 2px solid rgba(255,255,255,0.1  );
+  margin: 0 auto;
+}
+.contactFormHeading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding-top: 5rem;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  bottom: 0;
+}
+.footerTextContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerText {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-right: 1rem;
+  color: #f56565;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navLogo {
+    margin-bottom: 1rem;
+  }
+  .navLinks {
+    display: flex;
+    flex-direction: column;
+  }
+  .linkName {
+    margin-bottom: 1rem;
+  }
+  .mainAboutContainer {
+    padding: 2rem 1rem;
+  }
+  .aboutTextContainer {
+    margin-top: 2rem;
+  }
+  .aboutName {
+    font-size: 1.5rem;
+  }
+  .aboutParagraph {
+    font-size: 1rem;
+  }
+  .contactContainer {
+    padding: 2rem 1rem;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectSectionHeading {
+    font-size: 1.5rem;
+  }
+  
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .nav {
+    flex-direction: row;
+    align-items: center;
+  }
+  .navLogo {
+    margin-bottom: 0;
+  }
+  .navLinks {
+    display: flex;
+    flex-direction: row;
+  }
+  .linkName {
+    margin-bottom: 0;
+  }
+  .mainAboutContainer {
+    padding: 3rem 2rem;
+  }
+  .aboutTextContainer {
+    margin-top: 3rem;
+  }
+  .aboutName {
+    font-size: 2.5rem;
+  }
+  .aboutParagraph {
+    font-size: 1.75rem;
+  }
+  .contactContainer {
+    padding: 3rem 2rem;
+  }
+  .footer {
+    flex-direction: row;
+    align-items: center;
+  }
+  .projectSectionHeading {
+    font-size: 2.5rem;
+  }
 }
