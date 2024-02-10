@@ -1,0 +1,14 @@
+
+@media screen and (max-width: 400px) {
+    .contactForm {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactContainer {
+        padding-top: 10rem;
+    }
+    .contactFormHeading {
+        padding-top: 10rem;
+    }
+    
+}

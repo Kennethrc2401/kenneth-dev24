@@ -34,9 +34,9 @@ const Projects = (props: Props) => {
               width={384}
               height={384}
             />
-            <div className="text-2xl font-bold">{project.title}</div>
-            <div>{project.dateCreated}</div>
-            <div>{project.description}</div>
+            <div className="text-2xl font-bold projectTitle">{project.title}</div>
+            <div className="projectDateCreated">{project.dateCreated}</div>
+            <div className="projectDescription">{project.description}</div>
           </a>
         ))}
       </div>

@@ -12,12 +12,12 @@ const About = (props: Props) => {
       </div>
 
       <div 
-        className="mainAboutContainer bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 font-sans flex flex-col items-center space-y-8"
+        className="mainAboutContainer bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 font-sans flex flex-col items-center space-y-10"
       >
         <div className="portraitImageContainer">
           <Image 
             className="portraitImage" 
-            src={require(`./profilePhoto/Kenneth_Profile_Photo.jpg`)}
+            src={require(`./profilePhoto/265.jpg`)}
             alt="Kenneth" 
             width={300}
             height={300}
@@ -54,9 +54,13 @@ const About = (props: Props) => {
           </p>
         </div>
       </div>
+      {/* Social Links */}
+      <div className="socialLinksContainer flex justify-center space-x-4">
+        
+      </div>
 
-      <div>
-        <Footer />
+        <div>
+          <Footer />
         </div>
     </div>
   )

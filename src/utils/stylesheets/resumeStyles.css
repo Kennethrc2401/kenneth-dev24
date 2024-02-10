@@ -1,0 +1,137 @@
+/* General Styles */
+.resumeContainer {
+    margin: 20px;
+    padding: 20px;
+}
+
+.resumeDivider {
+    margin: 20px 0;
+    border: 1px solid #000;
+}
+/* Light red color like navbar links with transition*/
+a:hover {
+    color: #FF0000;
+    transition: 0.3s ease-in-out all;
+}
+
+/* EDUCATION */
+.resumeEducation, .educationHeading, .educationCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font: 1em sans-serif;
+}
+
+.educationHeading {
+    font-weight: bold;
+    justify-content: flex-start;
+}
+
+.educationCard:hover {
+    background-color: #000;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.educationCard h3 {
+    font-size: 1.5em;
+    margin: 5px;
+}
+
+.educationCard p {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+/* EXPERIENCE */
+.experienceCard {
+    /* Same styles as education card */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font: 1em sans-serif;
+}
+
+.experienceCard h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.experienceCard:hover {
+    background-color: #000;
+    /* color: #FFF; */
+    cursor: pointer;
+}
+.experienceSkills,
+.certificationSkills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+/* SKILLS */
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.resumeSkillsHeading {
+    font-weight: bold;
+    justify-content: flex-start;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.skillBox {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillLevelLow {
+    background-color: #FFFF00;
+    color: #000;
+}
+
+.skillLevelMed {
+    background-color: #FFA500;
+    color: #000;
+}
+
+.skillLevelHigh {
+    background-color: #008000;
+    color: #FFF;
+}
+
+.skillLevelExpert {
+    background-color: #800080;
+    color: #FFF;
+}
+
+.skillBox:hover {
+    background-color: #000;
+    color: #FFF;
+    cursor: pointer;
+}

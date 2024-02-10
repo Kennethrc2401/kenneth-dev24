@@ -5,6 +5,8 @@
 import Navbar from "@/components/navigation/navbar"
 import Footer from "@/components/footer"
 import ContactForm from "@/components/ContactForm"
+import styles from '@/utils/stylesheets/contactFormStyles.module.css'
+
 type Props = {}
 
 const Contact = (props: Props) => {
@@ -18,7 +20,7 @@ const Contact = (props: Props) => {
         <Navbar />
       </div>
       <div 
-        className="contactContainer bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 font-sans flex flex-col items-center space-y-8"
+        className="contactContainer bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 font-sans flex flex-col items-center space-y-10"
       >
         <div className="contactForm">
           <h1 className="text-4xl font-bold contactFormHeading">Contact</h1>

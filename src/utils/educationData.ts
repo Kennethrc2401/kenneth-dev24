@@ -1,4 +1,18 @@
-export const educationList = [
+type Education = {
+    school: string;
+    department: string;
+    degree: string;
+    major: string;
+    minor: string;
+    currentGrade: string;
+    startDate: string;
+    graduation: string;
+    gpa: string;
+    location: string;
+    activities: string;
+    description: string;
+};
+export const educationData: Education[] = [
     {
         school: 'Fairleigh Dickinson University',
         department: 'Gildart Haase School of Computer Sciences and Engineering',
