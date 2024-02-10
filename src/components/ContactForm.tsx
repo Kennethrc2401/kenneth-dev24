@@ -64,7 +64,7 @@ const ContactForm = () => {
 
     // Submit the form data
     try {
-      const response = await fetch('https://formsubmit.co/kennethramirezcastro@gmail.com', {
+      const response = await fetch('https://formsubmit.co/c948f81e53d83333e25ac956a8ebb348', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
