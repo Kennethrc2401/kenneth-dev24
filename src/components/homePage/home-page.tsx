@@ -15,6 +15,18 @@ const HomePage: React.FC = () => {
             <WelcomeBanner />
           </div>
         </section>
+
+        <section id="about" className="homeAboutSection">
+          <div className="aboutContainer">
+            <h2 className='homeAboutHeading'>About</h2>
+            <p className='homeAboutParagraph'>
+              I am a web developer and designer with a passion for creating
+              beautiful, functional, and accessible websites. I am currently
+              based in the United States and I am available for freelance
+              work. I am also open to full-time positions.
+            </p>
+          </div>
+        </section>
         <section id="contact" className="contactSection">
           <div className="contactContainer">
             <h2 className='homeContactHeading'>Contact</h2>

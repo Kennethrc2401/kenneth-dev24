@@ -1,3 +1,5 @@
+"use client"
+
 import { projectData } from "@/utils/projectData"
 import Image from "next/image"
 import Navbar from "@/components/navigation/navbar"

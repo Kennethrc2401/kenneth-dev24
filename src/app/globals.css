@@ -112,13 +112,30 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 2rem 2rem;
+  padding: 1.5rem 1.5rem;
   margin: 6rem auto; /* Shortened margin property */
   backdrop-filter: blur(10px);
   border-radius: 1rem;
   max-width: 100%; /* Adjusted max-width for better responsiveness */
 }
 
+.homeAboutSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 2rem;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  margin: 2rem auto;
+}
 
 /* Projects Styles */
 .projectSectionHeading {
@@ -167,6 +184,15 @@ body {
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
+}
+
+.projectDescription {
+  margin: 2rem 1rem;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  max-width: 95%;
 }
 
 
