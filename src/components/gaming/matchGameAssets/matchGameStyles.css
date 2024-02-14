@@ -1,0 +1,134 @@
+/* For Rendering Component onto the page */
+.matchGamePageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* height: 100vh; */
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+/* For the component itself */
+.MainParentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+
+}
+
+.gameInstructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.gameScore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    animation: pulse 1s infinite;
+}
+
+.buttonContainer button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+    height: auto;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    /* font-size: 1rem; */
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    background-color: rgb(32, 64, 86);
+    border: 4px solid white;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    margin: 10px; /* Adjust margin as needed */
+}
+
+.buttonContainer button:hover {
+    transform: scale(1.1);
+}
+
+.matchGameCardContainer {
+    display: flex;
+    flex-direction: row; flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    overflow-wrap: normal;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12.5rem;
+    border: 4px solid white;
+    border-radius: 8px;
+    background-color: rgb(32, 64, 86);
+    font-size: 7rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    width: 150px; /* Adjust width as needed */
+    margin: 10px; /* Adjust margin as needed */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.col-xs-3 {
+    width: 25%;
+}
+
+.col-md-9 {
+    width: 75%;
+}
+
+.col-xs-12 {
+    width: 100%;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}

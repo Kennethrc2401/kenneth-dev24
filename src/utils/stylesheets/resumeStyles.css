@@ -50,12 +50,16 @@ a:hover {
 }
 
 /* EXPERIENCE */
+.resumeExperience {
+    align-items: left;
+    margin: 0 auto;
+}
 .experienceCard {
     /* Same styles as education card */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     margin: 10px;
     padding: 10px;
     border: 1px solid #000;
@@ -69,7 +73,7 @@ a:hover {
     margin: 5px;
 }
 
-.experienceCard:hover {
+.experienceCard div:hover {
     background-color: #000;
     /* color: #FFF; */
     cursor: pointer;
@@ -79,7 +83,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     margin: 10px;
 }
 
@@ -101,6 +105,15 @@ a:hover {
 }
 
 .skillBox {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skillBox div {
     margin: 5px;
     padding: 5px;
     border: 1px solid #000;
@@ -134,4 +147,48 @@ a:hover {
     background-color: #000;
     color: #FFF;
     cursor: pointer;
+}
+
+.skillLegendContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.skillLegendContainer div {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillLegend div:hover {
+    background-color: #000;
+    color: #FFF;
+    cursor: pointer;
+}
+
+
+.highlightSkill {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out all;
+    border: 1px solid #FF0000;
+}
+
+.skillLegendHeading {
+    font-weight: bold;
+    justify-content: flex-start;
+    
+}
+
+.skillLegendDirections {
+    font-weight: bold;
+    justify-content: flex-start;
 }

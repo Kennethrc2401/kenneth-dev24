@@ -7,6 +7,26 @@ import '@/utils/stylesheets/resumeStyles.css'
 
 type Props = {}
 
+// Create a function that allows the keys in the legend
+// to highlighting (using css) all the skills that have that skill level
+// upon hovering over that legend key.
+// This function will be called in the legend divs.
+
+const onSkillKeyHover = (skillLevel: string) => { 
+  const skillBoxes = document.querySelectorAll('.skillBox')
+  skillBoxes.forEach((skillBox) => {
+    if (skillBox.classList.contains(`skillLevel${skillLevel}`)) {
+      skillBox.classList.add('highlightSkill')
+    }
+  })
+  const skillLegend = document.querySelector('.skillLegend')
+  skillLegend?.addEventListener('mouseleave', () => {
+    skillBoxes.forEach((skillBox) => {
+      skillBox.classList.remove('highlightSkill')
+    })
+  })
+}
+
 const ResumeComponent = (props: Props) => {
   return (
     <div className="resumeContainer">
@@ -54,11 +74,11 @@ const ResumeComponent = (props: Props) => {
                 </div>
             ))}
         </div>
-    </div>
+      </div>
         
-        </div>
-            <hr className='resumeDivider'/>
-            <div className="vscode-format">
+      </div>
+      <hr className='resumeDivider'/>
+          <div className="vscode-format">
             <div className="resumeExperience">
                 <h2>Experience</h2>
                 {/* Experience Card - Dynamic */}
@@ -78,7 +98,7 @@ const ResumeComponent = (props: Props) => {
                       </div>
                     </div>
                     ))}
-          </div>
+            </div>
           </div>
                 
         </div>
@@ -108,22 +128,52 @@ const ResumeComponent = (props: Props) => {
     <hr className='resumeDivider'/>
       <div className="resumeSkills">
         <h2 className='resumeSkillsHeading'>Skills</h2>
-              {/* Each skill will be in a small rectangular shape */}
-              {/* Shape fill color depends on level */}
-              {/* Gray-ish for beginner
-                  Orange-ish for intermediate
-                  Green for advanced 
-                  Purple-ish for Novice or Expert
-              */}
-              <div className="skillsContainer">
-                {skillsData.map((skill, index) => (
-                  <div key={index} className={`skillBox ${skill.level.toLocaleLowerCase() === 'beginner' ? 'skillLevelLow' : skill.level.toLocaleLowerCase() === 'intermediate' ? 'skillLevelMed' : skill.level.toLocaleLowerCase() === 'advanced' ? 'skillLevelHigh' : 'skillLevelExpert'}`}>
-                    {skill.name}
-                  </div>
-                ))}
-      </div>
+
+        {/* Each skill will be in a small rectangular shape */}
+        {/* Shape fill color depends on level */}
+        {/* Gray-ish for beginner
+            Orange-ish for intermediate
+            Green for advanced 
+            Purple-ish for Novice or Expert
+        */}
+        <div className="skillsContainer">
+          {skillsData.map((skill, index) => (
+            <div 
+              key={index} 
+              className={`skillBox ${skill.level.toLocaleLowerCase() === 'beginner' ? 'skillLevelLow' : skill.level.toLocaleLowerCase() === 'intermediate' ? 'skillLevelMed' : skill.level.toLocaleLowerCase() === 'advanced' ? 'skillLevelHigh' : 'skillLevelExpert'}`}
+            >
+              {skill.name}
+            </div>
+          ))}
+
+          {/* Skills section will have a key legend to show what each color means. */}
+          <div className="skillLegendContainer">
+            <h3 className="skillLegendHeading">Skill Level Key</h3>
+            <p className="skillLegendDirections">Hover over each level to highlight skills of that level.</p>
+            <div 
+              className="skillLevelLow"
+              onMouseEnter={() => onSkillKeyHover('Low')}
+            >
+              Beginner</div>
+            <div 
+              className="skillLevelMed"
+              onMouseEnter={() => onSkillKeyHover('Med')}
+            >
+              Intermediate</div>
+            <div 
+              className="skillLevelHigh"
+              onMouseEnter={() => onSkillKeyHover('High')}
+            >
+              Advanced</div>
+            <div 
+              className="skillLevelExpert"
+              onMouseEnter={() => onSkillKeyHover('Expert')}
+            >
+              Expert</div>
+          </div>
+        </div>
+    </div>
   </div>
-</div>
 </div>
   
   )

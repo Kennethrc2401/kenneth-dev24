@@ -7,6 +7,8 @@ const navbarLinks = [
   { title: 'Resume', link: '/resume' },
   { title: 'Projects', link: '/projects' },
   { title: 'Contact', link: '/contact' },
+  { title: 'Extras', link: '/extras'}
+  // { title: 'Games', link: '/gamesHome' },
 ]
 
 type Props = {}

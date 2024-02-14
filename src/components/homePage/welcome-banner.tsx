@@ -14,7 +14,7 @@ const WelcomeBanner = (props: Props) => {
         <div className={styles.bannerContent}>
           <h1 className={styles.title}>Kenneth Ramirez Castro</h1>
           <p className={styles.description}>Web Developer | Designer | Creative</p>
-          <a href="#portfolio" className={styles.button}>View Portfolio</a>
+          <a href="/projects" className={styles.button}>View Portfolio</a>
         </div>
       </div>
     </div>
