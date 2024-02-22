@@ -26,6 +26,7 @@ const Navbar = (props: Props) => {
         ))}
       </div>
     </nav>
+    
   )
 }
 

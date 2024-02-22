@@ -43,11 +43,16 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  overflow: wrap;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .text-justify {
+    text-align: justify;
   }
 }
 
@@ -63,9 +68,14 @@ body {
 
 /* Maybe add cool hover animation */
 .navLogo:hover {
-  transform: scale(1.1); /* Scaling the logo on hover */
-  color: #ff7b7b; /* Changing color on hover */
-  text-shadow: 0 0 10px rgba(255, 123, 123, 0.7); /* Adding a shadow effect */
+  /* Scaling the logo on hover */
+  transform: scale(1.1); 
+  /* Flip Over */
+  transform: rotateY(180deg);
+  /* Changing color on hover */
+  color: #ff7b7b; 
+  /* Adding a shadow effect */
+  text-shadow: 0 0 10px rgba(255, 123, 123, 0.7); 
 }
 
 .nav {
@@ -98,13 +108,6 @@ body {
 }
 
 /* Home Page Styles */
-.hpHeader {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-  padding-top: 5rem;
-}
-
 .homePageContainer,
 .portfolioSection1,
 .portfolioSection2 {
@@ -112,11 +115,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 1.5rem 1.5rem;
-  margin: 6rem auto; /* Shortened margin property */
   backdrop-filter: blur(10px);
   border-radius: 1rem;
-  max-width: 100%; /* Adjusted max-width for better responsiveness */
+  max-width: 98%; /* Adjusted max-width for better responsiveness */
+  scale: 0.9;
+  overflow: wrap;
 }
 
 .homeAboutSection {
@@ -137,13 +140,78 @@ body {
   margin: 2rem auto;
 }
 
-/* Projects Styles */
-.projectSectionHeading {
+.homeAboutSection h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  padding-top: 5rem;
+  }
+
+.homeAboutSection p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.homeContactContainer {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  padding: 5rem 2rem;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  margin: 2rem auto;
+}
+
+.homeContactContainer h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.homeContactContainer p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.homeContactContainer button {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background: #f56565;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.homeContactContainer button:hover {
+  background: #ff7b7b;
+  transition: background 0.3s ease;
+}
+
+/* Projects Styles */
+.projectSectionHeading h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding-top: 5.5rem;
 }
 
 .projectSectionHeading:hover {
@@ -493,6 +561,8 @@ body {
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   /* Mobile Styles */
+
+  /* Navigation */
   .nav {
     flex-direction: column;
     align-items: center;
@@ -501,10 +571,78 @@ body {
   .navLogo {
     margin-bottom: 1rem;
   }
-}
 
+  /* Home Page */
+  .homePageContainer,
+  .portfolioSection1,
+  .portfolioSection2 {
+    margin: 2rem auto;
+    scale: 0.8;
+  }
+
+  .homeAboutSection {
+    margin: 2rem auto;
+    border-radius: 1rem;
+  }
+  
+  .homeAboutHeading {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  .homePageContainer p {
+    margin: 1rem 0;
+  }
+
+  /* Projects */
+  .projectImage {
+    width: 200px;
+  }
+
+  .projectDescription {
+    margin: 1rem;
+  }
+
+  .projectSectionHeading {
+    padding-top: 9rem;
+  }
+
+  /* About */
+  .mainAboutContainer {
+    padding-top: 10rem;
+  }
+
+  .portraitImage {
+    width: 200px;
+  }
+
+  /* Resume */
+  .resumeContainer {
+    padding-top: 11rem;
+  }
+
+  /* Contact */
+  .contactContainer {
+    padding-top: 10rem;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+
+  .footer p {
+    margin-right: 0.5rem;
+  }
+
+}
 @media screen and (max-width: 1024px) {
   /* Tablet Styles */
+
+  /* Navigation */
   .nav {
     flex-direction: column;
     align-items: center;
@@ -513,5 +651,115 @@ body {
   .navLogo {
     margin-bottom: 1rem;
   }
+
+  /* Home Page */
+  .homePageContainer,
+  .portfolioSection1,
+  .portfolioSection2 {
+    margin: 2rem auto;
+  }
+
+  .homeAboutSection {
+    margin: 2rem auto;
+  }
+
+  /* Projects */
+  .projectImage {
+    width: 200px;
+  }
+
+  .projectDescription {
+    margin: 1rem;
+  }
+
+  .projectSectionHeading {
+    padding-top: 8rem;
+  }
+
+  /* About */
+  .mainAboutContainer {
+    padding-top: 10rem;
+  }
+
+  .portraitImage {
+    width: 200px;
+  }
+
+  /* Resume */
+  .resumeContainer {
+    padding-top: 10rem;
+  }
+
+  /* Contact */
+  .contactContainer {
+    padding-top: 10rem;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  /* Navigation */
+  .nav {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navLogo {
+    margin-bottom: 0;
+  }
+
+  /* Home Page */
+  .homePageContainer,
+  .portfolioSection1,
+  .portfolioSection2 {
+    margin: 2rem auto;
+  }
+
+  .homeAboutSection {
+    margin: 2rem auto;
+  }
+
+  /* Projects */
+  .projectImage {
+    width: 300px;
+  }
+
+  .projectDescription {
+    margin: 2rem 1rem;
+  }
+
+  .projectSectionHeading {
+    padding-top: 5.5rem;
+  }
+
+  /* About */
+  .mainAboutContainer {
+    padding-top: 10rem;
+  }
+
+  .portraitImage {
+    width: 300px;
+  }
+
+  /* Resume */
+  .resumeContainer {
+    padding-top: 10rem;
+  }
+
+  /* Contact */
+  .contactContainer {
+    padding-top: 10rem;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: row;
+    align-items: center;
+  }
+}
