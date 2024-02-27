@@ -1,18 +1,25 @@
+"use client";
+
 import React from 'react'
-import Navbar from '@/components/navigation/navbar'
+// import Navbar from '@/components/navigation/navbar'
+import NavbarV2 from '@/components/navigation/NavbarV2';
 import Footer from '@/components/footer'
 import Image from 'next/image'
+import "@/utils/stylesheets/AboutStyles.css"
+
 type Props = {}
 
 const About = (props: Props) => {
   return (
     <div>
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
+        <NavbarV2 />
       </div>
 
       <div 
-        className="mainAboutContainer bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 font-sans flex flex-col items-center space-y-10"
+        // className="mainAboutContainer bg-gray-100 dark:bg-gray-800 dark:text-gray-100 font-sans flex flex-col items-center space-y-10"
+        className="mainAboutContainer"
       >
         <div className="portraitImageContainer">
           <Image 
@@ -25,8 +32,11 @@ const About = (props: Props) => {
             
         </div>
 
-        <div className="aboutTextContainer">
+        <div className="aboutTextContainer vscode-format">
           <h1 className="aboutName">Kenneth Ramirez Castro</h1>
+          <h2 className="aboutPronouns">She/Her/They/Them</h2>
+          <h2 className="aboutTitle">Software Engineer</h2>
+          <h3 className="aboutLocation">New York City, NY</h3>
           <p className="aboutParagraph">
             Passionate Computer Science Senior specializing in 
             software engineering with a diverse skill set spanning 

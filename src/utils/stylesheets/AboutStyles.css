@@ -1,0 +1,57 @@
+/* About Styles */
+.mainAboutContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 6rem 2rem;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.aboutName {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.aboutParagraph {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.portraitImage {
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  margin: 2rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  object-fit: cover;
+  object-position: center;
+  width: 300px;
+ }
+
+.portraitImage:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 20px 0 rgba(255, 101, 101, 0.7);
+}
+
+@media (max-width: 400px) {
+  .mainAboutContainer {
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+  }
+}

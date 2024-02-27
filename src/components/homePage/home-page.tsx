@@ -1,6 +1,8 @@
 import React from 'react';
-import WelcomeBanner from './welcome-banner';
+import WelcomeBannerV2 from "../welcomeBanner/WelcomeBannerV2"
 import ContactForm from '../ContactForm';
+import "./HomePageStyles.css";
+// import HomePageVersionTwo from './home-page-v2';
 
 const HomePage: React.FC = () => {
   return (
@@ -8,7 +10,7 @@ const HomePage: React.FC = () => {
       <main>
         <section id="portfolio" className="portfolioSection1">
           <div className="portfolioContainer1">
-            <WelcomeBanner />
+            <WelcomeBannerV2 />
           </div>
         </section>
 
@@ -16,7 +18,7 @@ const HomePage: React.FC = () => {
           <div className="aboutContainer">
             <h2 className='homeAboutHeading'>About</h2>
             <p className='homeAboutParagraph'>
-              I am a web developer and designer with a passion for creating
+              I am a software developer and designer with a passion for creating
               beautiful, functional, and accessible websites. I am currently
               based in the United States and I am available for freelance
               work. I am also open to full-time positions.

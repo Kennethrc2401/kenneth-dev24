@@ -1,0 +1,52 @@
+/* Navbar Styles */
+.navLogo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 1rem;
+  color: #f56565;
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease; /* Adding transitions for multiple properties */
+}
+
+/* Maybe add cool hover animation */
+.navLogo:hover {
+  /* Scaling the logo on hover */
+  transform: scale(1.1); 
+  /* Flip Over */
+  transform: rotateY(180deg);
+  /* Changing color on hover */
+  color: #ff7b7b; 
+  /* Adding a shadow effect */
+  text-shadow: 0 0 10px rgba(255, 123, 123, 0.7); 
+  /* Prevent spin from glitching or being too sensitive if mouse is not directly on it*/
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  margin: 0 auto;
+}
+
+.linkName {
+  font-family: "Montserrat", sans-serif;
+  color: #f56565;
+}
+
+.linkName:hover {
+  color: #fff;
+  transition: color 0.3s ease;
+  text-shadow: 0 0 10px rgba(255, 101, 101, 0.7); /* Adding a shadow effect */
+}

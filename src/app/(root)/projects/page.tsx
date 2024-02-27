@@ -2,17 +2,20 @@
 
 import { projectData } from "@/utils/projectData"
 import Image from "next/image"
-import Navbar from "@/components/navigation/navbar"
+// import Navbar from "@/components/navigation/navbar"
+import NavbarV2 from "@/components/navigation/NavbarV2"
 import Footer from "@/components/footer"
+import "@/utils/stylesheets/ProjectsStyles.css";
 
 type Props = {}
 
 const Projects = (props: Props) => {
   return (
     <div 
-      className="flex flex-col items-center space-y-8 projectsContainer bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 font-sans"
+      className="flex flex-col items-center space-y-8 projectsContainer font-sans"
     >
-      <Navbar />
+      {/* <Navbar /> */}
+      <NavbarV2 />
       <div className="text-4xl font-bold projectSectionHeading">Projects</div>
       <div 
         className="flex flex-wrap justify-center space-x-8"

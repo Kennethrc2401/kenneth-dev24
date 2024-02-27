@@ -1,4 +1,5 @@
 import React from 'react'
+import "@/utils/stylesheets/FooterStyles.css"
 
 type Props = {}
 

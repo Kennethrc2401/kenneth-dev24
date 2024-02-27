@@ -37,10 +37,6 @@ export const skillsData: Skill[] = [
         level: "Intermediate",
     },
     {
-        name: "Node JS",
-        level: "Intermediate",
-    },
-    {
         name: "React",
         level: "Intermediate",
     },
@@ -162,6 +158,10 @@ export const skillsData: Skill[] = [
     },
     {
         name: "Machine Learning",
+        level: "Beginner",
+    },
+    {
+        name: "Jira",
         level: "Beginner",
     }
 ];

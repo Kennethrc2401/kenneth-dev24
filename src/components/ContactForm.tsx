@@ -1,9 +1,12 @@
 "use client";
-import React from 'react';
-// React Hero Icons
 
-import { useState } from 'react';
+import React, { useState } from 'react';
+import "@/utils/stylesheets/contactFormStyles.module.css"
 import { motion } from 'framer-motion';
+import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from './ui/alert-dialog';
+// import AlertMessage from './alertMessage/AlertMessage';
+// import Message from './Message/Message';
+
 
 const ContactForm = () => {
   const inputStyles = `mb-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`;
@@ -74,7 +77,16 @@ const ContactForm = () => {
 
       if (response.ok) {
         console.log('Email sent successfully!');
-        // Handle success (e.g., show a success message)
+        
+        // Show the success message
+        // alert('Email sent successfully!');
+
+        // Close the Alert Dialog
+        const dialog = document.querySelector('dialog');
+        if (dialog) {
+          dialog.close();
+          dialog.remove();
+        }
 
         // Clear the form
         setFormData({
@@ -83,12 +95,29 @@ const ContactForm = () => {
           phone: '',
           message: '',
         });
+
+        // Clear the form errors
+        setFormErrors({
+          name: '',
+          email: '',
+          message: '',
+        });
+
+        // Reset Page
+        setTimeout(() => {
+          window.location.reload();
+        }, response.status === 200 ? 3000 : 0);
+
       } else {
         console.error('Failed to send email');
         // Handle failure (e.g., show an error message)
+        alert('Failed to send email');
+
       }
     } catch (error) {
       console.error('Error:', error);
+      // Handle failure (e.g., show an error message)
+      alert('Failed to send email');
     }
   };
 
@@ -145,16 +174,40 @@ const ContactForm = () => {
               />
               {formErrors.message && <p className="mt-1 text-primary-500">{formErrors.message}</p>}
 
-              <button
+              {/* <button
                 type="submit"
                 className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white text-white hover:bg-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"
               >
                 SUBMIT
-              </button>
+              </button> */}
+              <AlertDialog>
+                <AlertDialogTrigger
+                  className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white text-white hover:bg-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"
+                >
+                  SUBMIT
+                </AlertDialogTrigger>
+                <AlertDialogContent>
+                  <AlertDialogHeader>Submit Form</AlertDialogHeader>
+                  <AlertDialogDescription>
+                    Are you sure you want to submit the form?
+                  </AlertDialogDescription>
+                  <AlertDialogFooter>
+                    <AlertDialogCancel
+                      className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white text-white hover:bg-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"
+                    >
+                      Cancel
+                    </AlertDialogCancel>
+                    <AlertDialogAction
+                      type='submit'
+                      onClick={handleSubmit as any}
+                    >
+                      SUBMIT
+                    </AlertDialogAction>
+                  </AlertDialogFooter>
+                </AlertDialogContent>
+              </AlertDialog>
             </form>
           </motion.div>
-
-          <motion.div></motion.div>
         </div>
       </motion.div>
     </section>

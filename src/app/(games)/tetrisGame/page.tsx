@@ -1,6 +1,7 @@
 "use client";
 import React from 'react'
-import Navbar from '@/components/navigation/navbar'
+// import Navbar from '@/components/navigation/navbar'
+import NavbarV2 from '@/components/navigation/NavbarV2'
 import Footer from '@/components/footer'
 const styles  = require('@/components/gaming/tetrisGameAssets/tetrisGamePageStyles.css')
 import Tetris from '@/components/gaming/tetrisGameAssets/TetrisGame'
@@ -11,7 +12,8 @@ const TetrisGame = (props: Props) => {
   return (
     <div className="mainParentContainer">
         <div className="navbarContainer">
-            <Navbar />
+            {/* <Navbar /> */}
+            <NavbarV2 />
         </div>
         <div className="gameContainer">
             <h1 className="gameHeading">Tetris Game</h1>

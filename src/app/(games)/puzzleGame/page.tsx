@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
-import Navbar from '@/components/navigation/navbar';
+// import Navbar from '@/components/navigation/navbar';
+import NavbarV2 from '@/components/navigation/NavbarV2'
 import Footer from '@/components/footer';
 import PuzzleGame from '@/components/gaming/puzzleGameAssets/PuzzleGame';
 const styles = require('@/components/gaming/puzzleGameAssets/puzzleGamePage.css');
@@ -9,7 +10,8 @@ const PuzzlePage: React.FC = () => {
   return (
     <div>
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
+        <NavbarV2 />
       </div>
       <div className="mainParentContainer">
         <h1 className="puzzleGameHeading">

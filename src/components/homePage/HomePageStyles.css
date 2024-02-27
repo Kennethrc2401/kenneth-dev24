@@ -1,0 +1,115 @@
+/* Home Page Styles */
+
+.homePageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 5rem 2rem; */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.homePageContainer,
+.portfolioSection1,
+.portfolioSection2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  max-width: 98%; /* Adjusted max-width for better responsiveness */
+  scale: 0.9;
+  overflow: wrap;
+}
+
+.homeAboutSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 2rem;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  margin: 2rem auto;
+}
+
+.homeAboutSection h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  }
+
+.homeAboutSection p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.homeContactContainer {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  padding: 5rem 2rem;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  margin: 2rem auto;
+}
+
+.homeContactContainer h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.homeContactContainer p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.homeContactContainer button {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background: #f56565;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.homeContactContainer button:hover {
+  background: #ff7b7b;
+  transition: background 0.3s ease;
+}

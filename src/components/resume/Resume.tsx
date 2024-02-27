@@ -1,9 +1,12 @@
+"use client"
+
 import React from 'react'
 import { educationData } from '@/utils/educationData'
 import { experienceData } from '@/utils/experienceData'
 import { certificationData } from '@/utils/certificationData'
 import { skillsData } from '@/utils/skillsData'
 import '@/utils/stylesheets/resumeStyles.css'
+import SocialIconsComponent from '../socialIcons/SocialIcons'
 
 type Props = {}
 
@@ -27,6 +30,16 @@ const onSkillKeyHover = (skillLevel: string) => {
   })
 }
 
+// Reset the highlighting of the skills when the mouse leaves the skills container.
+// This function will be called in the skillsContainer div.
+
+const onSkillsContainerLeave = () => {
+  const skillBoxes = document.querySelectorAll('.skillBox')
+  skillBoxes.forEach((skillBox) => {
+    skillBox.classList.remove('highlightSkill')
+  })
+}
+
 const ResumeComponent = (props: Props) => {
   return (
     <div className="resumeContainer">
@@ -34,14 +47,17 @@ const ResumeComponent = (props: Props) => {
         <h1 className="myName">Kenneth Ramirez Castro</h1>
         <h3 className="myTitle">Software & Python Developer • Robotics Lab Assistant • Sports Photographer</h3>
         <p className="myContact">
-          <a className="myPhone" href="tel:201-956-5731">(201) 956-5731</a> •{' '}
+          {/* <a className="myPhone" href="tel:201-956-5731">(201) 956-5731</a> •{' '}
           <a className="myEmail" href="mailto:Kennethrc19@student.fdu.edu">Kennethrc19@student.fdu.edu</a>
           <br/>
           <a className="myLinkedIn" href="https://www.linkedin.com/in/kenneth-ramirez-castro-260a0598/" target='_blank' rel="noopener noreferrer">LinkedIn</a>&nbsp; • &nbsp;
           <a className="myGithub" href="https://github.com/Kennethrc2401" target='_blank' rel="noopener noreferrer">GitHub</a>&nbsp; • &nbsp;
-          <a className='myPhotographyPortfolio' href="http://kenneth-s-photos.weebly.com/" target='_blank' rel="noopener noreferrer">Kenneth&apos;s Photos</a>
+          <a className='myPhotographyPortfolio' href="http://kenneth-s-photos.weebly.com/" target='_blank' rel="noopener noreferrer">Kenneth&apos;s Photos</a> */}
+          <SocialIconsComponent />
         </p>
         <br/>
+
+        
         <p className="myObjective markdownFormatted"> 
               Overachieving Computer Science Senior, proficient with programming languages used in software engineering (Python, JAVA,  
               CSS, C++, and some JavaScript and C#); Nao AI Humanoid Robotics; HTML5 and Front-End Web Development; Adobe Creative Cloud; 
@@ -61,14 +77,15 @@ const ResumeComponent = (props: Props) => {
             {educationData.map((edu, index) => (
                 <div key={index}>
                     <h3>{edu.school}</h3>
+                    <p>{edu.location}</p>
                     <p>{edu.department}</p>
-                    <p>{edu.degree}</p>
-                    <p>{edu.major}</p>
-                    <p>{edu.minor}</p>
-                    <p>{edu.currentGrade}</p>
+                    <p>{`Degree: ${edu.degree}`}</p>
+                    <p>{`Major: ${edu.major}`}</p>
+                    <p>{`Minor: ${edu.minor}`}</p>
+                    <p>{`Grade: ${edu.currentGrade}`}</p>
                     <p>{edu.startDate} - {edu.graduation}</p>
                     <p>GPA: {edu.gpa}</p>
-                    <p>{edu.location}</p>
+                    
                     <p>{edu.activities}</p>
                     <p>{edu.description}</p>
                 </div>
@@ -136,7 +153,10 @@ const ResumeComponent = (props: Props) => {
             Green for advanced 
             Purple-ish for Novice or Expert
         */}
-        <div className="skillsContainer">
+        <div 
+          className="skillsContainer"
+          onMouseLeave={onSkillsContainerLeave}
+        >
           {skillsData.map((skill, index) => (
             <div 
               key={index} 

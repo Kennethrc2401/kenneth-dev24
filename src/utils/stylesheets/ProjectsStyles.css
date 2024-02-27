@@ -1,0 +1,63 @@
+/* Projects Styles */
+.projectSectionHeading h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  padding-top: 5.5rem;
+}
+
+.projectSectionHeading:hover {
+  color: #f56565;
+  transition: color 0.3s ease;
+  text-shadow: 0 0 10px rgba(255, 101, 101, 0.7); /* Adding a shadow effect */
+}
+
+/* Project Image Styles */
+.projectImage {
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  margin: 1rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  object-fit: cover;
+  object-position: center;
+  width: 300px;
+}
+
+.projectImage:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 20px 0 rgba(255, 101, 101, 0.7);
+}
+
+.projectTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.projectTitle:hover {
+  color: #f56565;
+  transition: color 0.3s ease;
+  text-shadow: 0 0 10px rgba(255, 101, 101, 0.7);
+}
+
+.projectDateCreated,
+.projectDescription {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.projectDescription {
+  margin: 2rem 1rem;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  max-width: 95%;
+}

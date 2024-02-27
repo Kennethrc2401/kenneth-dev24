@@ -1,0 +1,28 @@
+
+.socialIconsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.socialIcon {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+  .socialIcon {
+    margin: 0 5px;
+    font-size: 18px;
+  }
+
+    .socialIconsContainer {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

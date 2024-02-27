@@ -1,6 +1,8 @@
 import React from 'react'
 import Logo from "@/assets/Logo.png"
 import Image from "next/image"
+import "./NavigationStyles.css"
+
 const navbarLinks = [
   { title: 'Home', link: '/' },
   { title: 'About', link: '/about' },

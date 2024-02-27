@@ -1,15 +1,18 @@
 "use client"
 import React from 'react'
-import Navbar from '@/components/navigation/navbar'
+// import Navbar from '@/components/navigation/navbar'
+import NavbarV2 from '@/components/navigation/NavbarV2';
 import Footer from '@/components/footer'
+import "@/utils/stylesheets/extrasPageStyles.css"
 
 type Props = {}
 
 const page = (props: Props) => {
   return (
     <div className="">
-      <Navbar />
-      <div className="extrasContainer container mx-auto">
+      {/* <Navbar /> */}
+      <NavbarV2 />
+      <div className="extrasContainer container mx-auto vscode-format">
         <h1 className="extrasHeading text-3xl font-bold text-center mt-8">Extras</h1>
         <div className="flex flex-wrap justify-center items-center mt-8">
           <div className="extrasCardContainer w-full md:w-1/3 p-4">

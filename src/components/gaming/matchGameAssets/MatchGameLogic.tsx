@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import Message from '../Message/Message'; // Import the Message component
+import Message from '@/components/Message/Message'; // Import the Message component
 import './matchGameStyles.css'; // Import CSS for styling
 
 type Props = {}

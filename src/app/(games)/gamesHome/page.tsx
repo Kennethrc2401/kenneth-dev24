@@ -1,5 +1,8 @@
+"use client"
+
 import React from 'react'
-import Navbar from '@/components/navigation/navbar'
+// import Navbar from '@/components/navigation/navbar'
+import NavbarV2 from '@/components/navigation/NavbarV2'
 import Footer from '@/components/footer'
 const styles  = require('@/utils/stylesheets/games/gamesHomeStyles.css')
 type Props = {}
@@ -8,11 +11,13 @@ const GamesHome = (props: Props) => {
   return (
     <div>
         <div>
-            <Navbar />
+            {/* <Navbar /> */}
+            <NavbarV2 />
         </div>
         <div className="gamesHomeContainer">
             <h1 className="gamesHomeHeading">Games Home</h1>
             <div className="gamesHomeParagraph">
+                <p><em>Note: THis is still in development.</em></p>
                 <p>Here you can find all the games in my developed collection. I will be adding more games in the future. I hope you enjoy playing them.</p>
             </div>
             <div className="gamesHomeList">

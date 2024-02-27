@@ -6,6 +6,7 @@ import './Message.css'; // Import CSS for styling
 type MessageProps = {
   message: string;
   onAnimationEnd: () => void;
+  type?: 'success' | 'error';
 };
 
 const Message: React.FC<MessageProps> = ({ message, onAnimationEnd }) => {
