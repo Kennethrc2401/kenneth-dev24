@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import "@/utils/stylesheets/contactFormStyles.module.css"
 import { motion } from 'framer-motion';
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from './ui/alert-dialog';
+import { Toaster } from './ui/sonner';
 // import AlertMessage from './alertMessage/AlertMessage';
 // import Message from './Message/Message';
 
@@ -194,15 +195,22 @@ const ContactForm = () => {
                   <AlertDialogFooter>
                     <AlertDialogCancel
                       className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white text-white hover:bg-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"
+                      type='submit'
+                      onClick={handleSubmit as any}
+                    >
+                      Submit
+                    </AlertDialogCancel>
+                    <AlertDialogCancel
+                      className="mt-5 rounded-lg bg-gray-500 px-20 py-3 transition duration-500 hover:text-white text-white hover:bg-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"
                     >
                       Cancel
                     </AlertDialogCancel>
-                    <AlertDialogAction
+                    {/* <AlertDialogAction
                       type='submit'
                       onClick={handleSubmit as any}
                     >
                       SUBMIT
-                    </AlertDialogAction>
+                    </AlertDialogAction> */}
                   </AlertDialogFooter>
                 </AlertDialogContent>
               </AlertDialog>

@@ -1,7 +1,6 @@
 "use client";
 
-import React from 'react'
-import Navbar from '@/components/navigation/navbar'
+import NavbarV2 from '@/components/navigation/NavbarV2';
 import ResumeComponent from '@/components/resume/Resume'
 import Footer from '@/components/footer'
 
@@ -10,7 +9,7 @@ type Props = {}
 const Resume = (props: Props) => {
   return (
     <div>
-        <Navbar />
+        <NavbarV2 />
         <br />
         <br />
         <br />

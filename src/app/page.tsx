@@ -1,6 +1,5 @@
 "use client";
 
-import Navbar from "@/components/navigation/navbar";
 import Footer from "@/components/footer";
 import HomePage from "@/components/homePage/home-page";
 import "./globals.css";
@@ -12,7 +11,7 @@ import "@/components/navigation/NavigationStyles.css";
 import NavbarV2 from "@/components/navigation/NavbarV2";
 
 
-import HomePageVersionTwo from "@/components/homePage/home-page-v2";
+// import HomePageVersionTwo from "@/components/homePage/home-page-v2";
 
 type Props = {};
 
@@ -21,7 +20,6 @@ export default function Page(props: Props) {
     <main 
       // className="flex min-h-screen flex-col items-center justify-betweenn bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-100 font-sans"
     >
-      {/* <Navbar /> */}
       <NavbarV2 />
       {/* <br /> */}
       <HomePage />

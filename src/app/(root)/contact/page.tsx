@@ -7,6 +7,7 @@ import NavbarV2 from "@/components/navigation/NavbarV2";
 import Footer from "@/components/footer"
 import ContactForm from "@/components/ContactForm"
 import styles from '@/utils/stylesheets/contactFormStyles.module.css'
+import SocialIconsComponent from "@/components/socialIcons/SocialIcons";
 
 type Props = {}
 
@@ -25,7 +26,11 @@ const Contact = (props: Props) => {
           <h1 className="text-4xl font-bold contactFormHeading">Contact</h1>
           
           <ContactForm />
+          <div className="socialIcons">
+            <SocialIconsComponent />
+          </div>
         </div>
+        
               
       </div>
       <div>

@@ -1,0 +1,42 @@
+.macMenuBar {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+}
+
+.macMenuBarItems {
+    display: flex;
+    align-items: center;
+}
+
+.macMenuBarItem {
+    margin-right: 10px;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.macMenuBarItem:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.appleLogo {
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .macMenuBar {
+        padding: 8px 0;
+    }
+
+    .macMenuBarItems {
+        justify-content: center;
+    }
+
+    .macMenuBarItem {
+        margin-right: 0;
+    }
+}

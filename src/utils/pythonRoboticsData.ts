@@ -1,29 +1,27 @@
 type PythonProject = {
     title: string;
     description: string;
-    dateCreated: string;
+    dateStarted: string;
+    dateFinished?: string;
+    status?: string;
     link?: string;
     githubLink?: string;
     image?: string;
+    alt?: string;
+    tags?: string[];
 };
 
 export const pythonRoboticsData: PythonProject[] = [
     {
-        title: "Python Development",
-        description: "View my Python Software Development & Robotics Projects. Still under development. Linked to games page for now.",
-        dateCreated: "2021-08-15",
-        link: "/gamesHome",
-    },
-    {
-        title: "Photography",
-        description: "On the side, I am a sports photographer.",
-        dateCreated: "2021-08-15",
-        link: "http://kenneth-s-photos.weebly.com/",
-    },
-    {
-        title: "Games",
-        description: "Play games from my developer collection",
-        dateCreated: "2021-08-15",
-        link: "/gamesHome",
+        title: "NAO Robot Syncronization",
+        description: "Synchronized two NAO robots to perform an action or dance routine together.",
+        dateStarted: "August 2019",
+        dateFinished: "May 2023",
+        status: "Mostly Completed",
+        link: "...",
+        githubLink: "...",
+        image: "...",
+        alt: "NAO Robot Syncronization Project",
+        tags: ["Python", "NAO", "Robotics"],
     },
 ];

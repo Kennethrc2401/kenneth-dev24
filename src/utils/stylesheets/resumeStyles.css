@@ -124,6 +124,11 @@ a:hover {
     align-items: center;
 }
 
+.skillBox:hover {
+    /* Red Outline */
+    border: 1px solid #FF0000;
+}
+
 .skillLevelLow {
     background-color: #FFFF00;
     color: #000;

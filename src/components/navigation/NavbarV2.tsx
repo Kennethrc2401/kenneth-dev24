@@ -19,7 +19,7 @@ const NavbarV2 = (props: Props) => {
         menu: 'hidden md:block flex justify-end items-center',
         link: 'mr-4 text-lg font-bold text-gray-800 dark:text-gray-100 hover:text-gray-600 dark:hover:text-gray-200 transition duration-300 ease-in-out',
         navLogo: 'rounded-full shadow-lg hover:shadow-xl transition duration-300 ease-in-out hover:scale-105 hover:rotate-180 transform origin-center cursor-pointer',
-        bottomDivider: 'border-b-2 border-gray-200 dark:border-gray-800 w-full mt-4 mb-4'
+        bottomDivider: 'border-b-2 border-gray-800 dark:border-gray-800 w-full mt-4 mb-4'
     }
 
     // Styles for small screen size
@@ -73,35 +73,35 @@ const NavbarV2 = (props: Props) => {
                         
                         {/* Navbar Menu */}
                         <div
-                            className={largeScreenStyles.menu}
+                            className={`${largeScreenStyles.menu}`}
                         >
                             <a 
-                            className={largeScreenStyles.link}
+                            className={`${largeScreenStyles.link}`}
                             href="/">
                                 Home
                             </a>
                             <a 
-                            className={largeScreenStyles.link}
+                            className={`${largeScreenStyles.link}`}
                             href="/about">
                                 About
                             </a>
                             <a
-                            className={largeScreenStyles.link}
+                            className={`${largeScreenStyles.link}`}
                             href="/resume">
                                 Projects
                             </a>
                             <a 
-                            className={largeScreenStyles.link}
+                            className={`${largeScreenStyles.link}`}
                             href="/projects">
                                 Projects
                             </a>
                             <a 
-                            className={largeScreenStyles.link}
+                            className={`${largeScreenStyles.link}`}
                             href="/contact">
                                 Contact
                             </a>
                             <a 
-                            className={largeScreenStyles.link}
+                            className={`${largeScreenStyles.link}`}
                             href='/extras'>
                                 Extras</a>
                         </div>
