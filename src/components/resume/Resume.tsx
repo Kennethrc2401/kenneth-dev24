@@ -44,15 +44,11 @@ const ResumeComponent = (props: Props) => {
   return (
     <div className="resumeContainer">
       <div className="resumeHeader">
-        <h1 className="myName">Kenneth Ramirez Castro</h1>
+        <h1 className="myName">
+          Sophia Amanda Ramirez
+        </h1>
         <h3 className="myTitle">Software & Python Developer • Robotics Lab Assistant • Sports Photographer</h3>
         <p className="myContact">
-          {/* <a className="myPhone" href="tel:201-956-5731">(201) 956-5731</a> •{' '}
-          <a className="myEmail" href="mailto:Kennethrc19@student.fdu.edu">Kennethrc19@student.fdu.edu</a>
-          <br/>
-          <a className="myLinkedIn" href="https://www.linkedin.com/in/kenneth-ramirez-castro-260a0598/" target='_blank' rel="noopener noreferrer">LinkedIn</a>&nbsp; • &nbsp;
-          <a className="myGithub" href="https://github.com/Kennethrc2401" target='_blank' rel="noopener noreferrer">GitHub</a>&nbsp; • &nbsp;
-          <a className='myPhotographyPortfolio' href="http://kenneth-s-photos.weebly.com/" target='_blank' rel="noopener noreferrer">Kenneth&apos;s Photos</a> */}
           <SocialIconsComponent />
         </p>
         <br/>
@@ -70,8 +66,8 @@ const ResumeComponent = (props: Props) => {
         <hr className='resumeDivider'/>
         <div className="resumeBody">
     <div className="vscode-format">
-    <div className="resumeEducation">
-        <h2 className="educationHeading">Education</h2>
+      <div className="resumeEducation">
+        <h2 className="educationSectionHeading vscode-format">Education</h2>
         {/* Education Card - Dynamic*/}
         <div className="educationCard">
             {educationData.map((edu, index) => (
@@ -88,6 +84,14 @@ const ResumeComponent = (props: Props) => {
                     
                     <p>{edu.activities}</p>
                     <p>{edu.description}</p>
+
+                    {/* Courses Taken - Dynamic */}
+                    <h4 className="courseBoxHeading">Courses Taken:</h4>
+                    {edu.courses.map((course, index) => (
+                      <div key={index} className='courseBox'>
+                        - {course}
+                      </div>
+                    ))}
                 </div>
             ))}
         </div>
@@ -131,7 +135,7 @@ const ResumeComponent = (props: Props) => {
                   <p>{cert.company}</p>
                   <p>{cert.date}</p>
                   <p>{cert.description}</p>
-                  {/* <p>{cert.skills}</p> */}
+                  <p>{cert.skills}</p>
                   <div className="certificationSkills">
                     {cert.skills.map((skill, index) => (
                       <div key={index} className='skillBox'>{skill}</div>

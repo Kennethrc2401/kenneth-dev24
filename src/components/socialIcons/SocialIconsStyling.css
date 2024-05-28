@@ -14,6 +14,10 @@
   transition: all 0.3s ease;
 }
 
+.socialIcon:hover {
+  color: #f00;
+}
+
 /* Mobile Screens */
 @media (max-width: 768px) {
   .socialIcon {

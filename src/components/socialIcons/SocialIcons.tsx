@@ -8,6 +8,7 @@ import {
     Music2Icon,
     MailIcon,
     PhoneIcon,
+    InstagramIcon,
  } from 'lucide-react'
  import './SocialIconsStyling.css'
 
@@ -43,7 +44,7 @@ const SocialIconsComponent = (props: Props) => {
             </a>
             <a 
                 className="linkedinIcon socialIcon" 
-                href="https://www.linkedin.com/in/kenneth-ramirez-castro-260a0598/" 
+                href="https://www.linkedin.com/in/kennethramirezcastro/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 title='LinkedIn'
@@ -67,6 +68,15 @@ const SocialIconsComponent = (props: Props) => {
                 title='Spotify'
             >
                 <Music2Icon size={24} />
+            </a>
+            <a 
+                className="instagramIcon socialIcon" 
+                href="https://www.instagram.com/sophiaspinsandblooms/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                title='Instagram'
+            >
+                <InstagramIcon size={24} />
             </a>
         </div>
     </div>
