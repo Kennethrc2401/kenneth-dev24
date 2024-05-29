@@ -16,6 +16,7 @@
     font-family: sans-serif;
 }
 
+.myPronouns,
 .myObjective {
     font-size: 1em;
     font-family: sans-serif;
@@ -39,7 +40,7 @@ a:hover {
     align-items: center;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     border-radius: 5px;
     font: 1em sans-serif;
 }
@@ -54,6 +55,18 @@ a:hover {
     cursor: default;
 }
 
+div.educationCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font: 1em sans-serif;
+}
+
 .educationCard h3 {
     font-weight: bold;
     justify-content: flex-start;
@@ -63,26 +76,49 @@ a:hover {
 .educationCard p {
     margin: 5px;
     padding: 5px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
-.courseBox {
+.courseBoxContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    align-items: center;
+    align-items: left;
     margin: 10px;
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 5px;
-    font: 1em sans-serif;
 }
 
-h4.courseBoxHeading {
+.courseBoxHeading {
     font-weight: bold;
     justify-content: flex-start;
+    border-radius: 5px;
+    padding: 14px 10px 2px 10px;
+    margin-top: 10px;
     text-decoration: underline;
-    padding-top: 5px;
+}
+
+.courseBoxList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+    margin: 10px;
+    padding: 10px;
+}
+
+.courseBoxList div {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.courseBoxList div:hover {
+    background-color: #000;
+    color: #FFF;
+    cursor: default;
 }
 
 /* EXPERIENCE */
@@ -98,8 +134,6 @@ h4.courseBoxHeading {
     align-items: left;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #000;
-    border-radius: 5px;
     font: 1em sans-serif;
 }
 
@@ -119,7 +153,6 @@ h4.courseBoxHeading {
 .experienceCard p {
     margin: 5px;
     padding: 5px;
-    border: 1px solid #000;
 }
 .experienceSkills,
 .certificationSkills {
@@ -128,13 +161,33 @@ h4.courseBoxHeading {
     justify-content: left;
     align-items: left;
     margin: 10px;
+    padding: 10px;
 }
+
+.experienceSkills div {
+    border: 1px solid gray;
+}
+
+.certificationSkills div:hover {
+    background-color: #000;
+    color: #FFF;
+    cursor: default;
+}
+
+/* CERTIFICATIONS */
+.certificationTitle {
+    font-weight: bold;
+    justify-content: flex-start;
+    border-radius: 5px;
+    padding: 10px;
+}
+
 
 /* SKILLS */
 .skillsContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     margin: 10px;
     padding: 10px;
@@ -170,6 +223,7 @@ h4.courseBoxHeading {
 .skillBox:hover {
     /* Red Outline */
     border: 1px solid #FF0000;
+    cursor: pointer;
 }
 
 .skillLevelLow {
@@ -195,7 +249,7 @@ h4.courseBoxHeading {
 .skillBox:hover {
     background-color: #000;
     color: #FFF;
-    cursor: pointer;
+    cursor: default;
 }
 
 .skillLegendContainer {
@@ -204,6 +258,7 @@ h4.courseBoxHeading {
     justify-content: center;
     align-items: center;
     margin: 10px;
+    padding: 10px;
 }
 
 .skillLegendContainer div {
@@ -220,24 +275,37 @@ h4.courseBoxHeading {
     background-color: #000;
     color: #FFF;
     cursor: pointer;
+    border: 1px solid #FF0000;
 }
 
+div.keyItem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font: 1em sans-serif;
+}
+
+div.keyItem:hover {
+    border: 2px solid #FF0000;
+    cursor: pointer;
+}
 
 .highlightSkill {
     background-color: #000;
     color: #fff;
     cursor: pointer;
     transition: 0.3s ease-in-out all;
-    border: 1px solid #FF0000;
 }
 
-.skillLegendHeading {
+h3.skillLegendHeading {
     font-weight: bold;
     justify-content: flex-start;
-    
-}
-
-.skillLegendDirections {
-    font-weight: bold;
-    justify-content: flex-start;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
 }

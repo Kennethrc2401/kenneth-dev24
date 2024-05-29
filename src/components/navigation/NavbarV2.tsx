@@ -88,7 +88,7 @@ const NavbarV2 = (props: Props) => {
                             <a
                             className={`${largeScreenStyles.link}`}
                             href="/resume">
-                                Projects
+                                Resume
                             </a>
                             <a 
                             className={`${largeScreenStyles.link}`}

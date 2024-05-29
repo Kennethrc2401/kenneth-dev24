@@ -47,6 +47,9 @@ const ResumeComponent = (props: Props) => {
         <h1 className="myName">
           Sophia Amanda Ramirez
         </h1>
+        <div className="myPronouns">
+          <p>She/Her/Hers</p>
+        </div>
         <h3 className="myTitle">Software & Python Developer • Robotics Lab Assistant • Sports Photographer</h3>
         <p className="myContact">
           <SocialIconsComponent />
@@ -86,12 +89,19 @@ const ResumeComponent = (props: Props) => {
                     <p>{edu.description}</p>
 
                     {/* Courses Taken - Dynamic */}
-                    <h4 className="courseBoxHeading">Courses Taken:</h4>
-                    {edu.courses.map((course, index) => (
-                      <div key={index} className='courseBox'>
-                        - {course}
+                    <div className="courseBoxContainer">
+                      <h4 className="courseBoxHeading">Courses Taken:</h4>
+                      <div className="courseBoxList">
+                      {edu.courses.map((course, index) => (
+                        <div 
+                          key={index}
+                          className='skillBox'
+                        >
+                          {course}
+                        </div>
+                      ))}
                       </div>
-                    ))}
+                    </div>
                 </div>
             ))}
         </div>
@@ -131,8 +141,12 @@ const ResumeComponent = (props: Props) => {
             <div className="certificationCard">
               {certificationData.map((cert, index) => (
                 <div key={index}>
-                  <h3>{cert.title}</h3>
-                  <p>{cert.company}</p>
+                  <h3
+                    className='certificationTitle'
+                  >{cert.title}</h3>
+                  <p
+                    className='certificationCompany'
+                  >{cert.company}</p>
                   <p>{cert.date}</p>
                   <p>{cert.description}</p>
                   <p>{cert.skills}</p>
@@ -172,28 +186,31 @@ const ResumeComponent = (props: Props) => {
 
           {/* Skills section will have a key legend to show what each color means. */}
           <div className="skillLegendContainer">
-            <h3 className="skillLegendHeading">Skill Level Key</h3>
+            <h3 className="skillLegendHeading">Skill Level Key:</h3>
+            <br/>
             <p className="skillLegendDirections">Hover over each level to highlight skills of that level.</p>
+            <div>
             <div 
-              className="skillLevelLow"
+              className="skillLevelLow keyItem"
               onMouseEnter={() => onSkillKeyHover('Low')}
             >
               Beginner</div>
             <div 
-              className="skillLevelMed"
+              className="skillLevelMed keyItem"
               onMouseEnter={() => onSkillKeyHover('Med')}
             >
               Intermediate</div>
             <div 
-              className="skillLevelHigh"
+              className="skillLevelHigh keyItem"
               onMouseEnter={() => onSkillKeyHover('High')}
             >
               Advanced</div>
             <div 
-              className="skillLevelExpert"
+              className="skillLevelExpert keyItem"
               onMouseEnter={() => onSkillKeyHover('Expert')}
             >
               Expert</div>
+            </div>
           </div>
         </div>
     </div>

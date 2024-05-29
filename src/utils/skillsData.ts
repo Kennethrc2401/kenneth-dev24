@@ -37,7 +37,7 @@ export const skillsData: Skill[] = [
         level: "Intermediate",
     },
     {
-        name: "React",
+        name: "React JS",
         level: "Intermediate",
     },
     {
@@ -74,7 +74,7 @@ export const skillsData: Skill[] = [
     },
     {
         name: "GitHub",
-        level: "Intermediate",
+        level: "Advanced",
     },
     {
         name: "Docker",
@@ -146,7 +146,7 @@ export const skillsData: Skill[] = [
     },
     {
         name: "Sports Photography",
-        level: "Intermediate",
+        level: "Advanced",
     },
     {
         name: "Teamwork",
@@ -163,5 +163,21 @@ export const skillsData: Skill[] = [
     {
         name: "Jira",
         level: "Beginner",
+    },
+    {
+        name: "NumPy",
+        level: "Intermediate",
+    },
+    {
+        name: "Pandas",
+        level: "Intermediate",
+    },
+    {
+        name: "Matplotlib",
+        level: "Intermediate",
+    },
+    {
+        name: "OpenPyXL",
+        level: "Intermediate",
     }
 ];
