@@ -68,6 +68,9 @@ const NavbarV2 = (props: Props) => {
                                 alt="Logo"
                                 width={50}
                                 height={50}
+                                onClick={() => {
+                                    window.location.href = '/'
+                                }}
                             />
                         </div>
                         

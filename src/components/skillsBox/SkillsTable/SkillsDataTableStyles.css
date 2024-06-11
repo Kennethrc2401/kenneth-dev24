@@ -1,0 +1,42 @@
+/* Styles for Skills Data Table */
+
+.paginationControlsCtn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.previous-button,
+.next-button {
+    margin-right: 10px;
+    padding-right: 10px;
+    color: #000;
+}
+
+.previous-button:hover,
+.next-button:hover {
+  color: #fff;
+  background-color: #000;
+  transition: 0.3s;
+}
+
+.skillRow:hover {
+    color: #fff;
+}
+
+.skillLevelLow {
+    color: #FFFF00;
+}
+
+.skillLevelMed {
+    color: #FFA500;
+}
+
+.skillLevelHigh {
+    color: #008000;
+}
+
+.skillLevelExpert {
+    color: #800080;
+}

@@ -1,0 +1,126 @@
+/* SKILLS */
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.resumeSkillsHeading {
+    font-weight: bold;
+    justify-content: flex-start;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.skillBox {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skillBox div {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillBox:hover {
+    /* Red Outline */
+    border: 1px solid #FF0000;
+    cursor: pointer;
+}
+
+.skillLevelLow {
+    background-color: #FFFF00;
+    color: #000;
+}
+
+.skillLevelMed {
+    background-color: #FFA500;
+    color: #000;
+}
+
+.skillLevelHigh {
+    background-color: #008000;
+    color: #FFF;
+}
+
+.skillLevelExpert {
+    background-color: #800080;
+    color: #FFF;
+}
+
+.skillBox:hover {
+    background-color: #000;
+    color: #FFF;
+    cursor: default;
+}
+
+.skillLegendContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.skillLegendContainer div {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillLegend div:hover {
+    background-color: #000;
+    color: #FFF;
+    cursor: pointer;
+    border: 1px solid #FF0000;
+}
+
+div.keyItem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font: 1em sans-serif;
+}
+
+div.keyItem:hover {
+    border: 2px solid #FF0000;
+    cursor: pointer;
+}
+
+.highlightSkill {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out all;
+}
+
+h3.skillLegendHeading {
+    font-weight: bold;
+    justify-content: flex-start;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+}

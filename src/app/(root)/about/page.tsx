@@ -6,6 +6,8 @@ import NavbarV2 from '@/components/navigation/NavbarV2';
 import Footer from '@/components/footer'
 import Image from 'next/image'
 import "@/utils/stylesheets/AboutStyles.css"
+import SocialIconsComponent from '@/components/socialIcons/SocialIcons';
+import DemoPage from '@/components/skillsBox/SkillsTable/SkillsTable';
 
 type Props = {}
 
@@ -33,7 +35,7 @@ const About = (props: Props) => {
         </div>
 
         <div className="aboutTextContainer vscode-format">
-          <h1 className="aboutName">Kenneth Ramirez Castro</h1>
+          <h1 className="aboutName">Sophia Amanda Ramirez</h1>
           <h2 className="aboutPronouns">She/Her/They/Them</h2>
           <h2 className="aboutTitle">Software Engineer</h2>
           <h3 className="aboutLocation">New York City, NY</h3>
@@ -63,15 +65,15 @@ const About = (props: Props) => {
             Electrical & Electronics Engineers (IEEE).
           </p>
         </div>
-      </div>
-      {/* Social Links */}
-      <div className="socialLinksContainer flex justify-center space-x-4">
-        
-      </div>
-
-        <div>
-          <Footer />
+        {/* Social Links */}
+        <div className="socialLinksContainer flex justify-center space-x-4">
+          <SocialIconsComponent />
         </div>
+        <DemoPage />
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
   )
 }

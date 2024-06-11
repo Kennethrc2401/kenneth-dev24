@@ -2,6 +2,7 @@ import React from 'react';
 import WelcomeBannerV2 from "../welcomeBanner/WelcomeBannerV2"
 import ContactForm from '../ContactForm';
 import "./HomePageStyles.css";
+import { Button } from '../ui/button';
 // import HomePageVersionTwo from './home-page-v2';
 
 const HomePage: React.FC = () => {
@@ -23,6 +24,15 @@ const HomePage: React.FC = () => {
               based in the United States and I am available for freelance
               work. I am also open to full-time positions.
             </p>
+
+            <Button
+              className='viewResumeButton'
+              onClick={() => {
+                window.location.href = '/resume'
+              }}
+            >
+              View Resume
+            </Button>
           </div>
         </section>
         <section id="contact" className="contactSection">
