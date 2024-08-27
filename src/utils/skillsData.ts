@@ -8,17 +8,17 @@ export const skillsData: Skill[] = [
     {
         name: "HTML",
         level: "Intermediate",
-        yearsExperience: 6,
+        yearsExperience: 7,
     },
     {
         name: "CSS",
         level: "Intermediate",
-        yearsExperience: 6,
+        yearsExperience: 7,
     },
     {
         name: "JavaScript",
         level: "Intermediate",
-        yearsExperience: 4,
+        yearsExperience: 5,
     },
     {
         name: "UI Design",
@@ -43,16 +43,17 @@ export const skillsData: Skill[] = [
     {
         name: "React JS",
         level: "Intermediate",
-        yearsExperience: 4,
+        yearsExperience: 5,
     },
     {
         name: "TypeScript",
         level: "Intermediate",
+        yearsExperience: 3.5,
     },
     {
         name: "Python",
         level: "Intermediate",
-        yearsExperience: 6.5,
+        yearsExperience: 7,
     },
     {
         name: "Django",

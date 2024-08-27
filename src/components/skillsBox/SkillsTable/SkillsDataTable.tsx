@@ -52,12 +52,12 @@ interface DataTableProps<TData, TValue> {
 function getSkillColor(level?: string): string {
   if (!level) return ""
   return level.toLocaleLowerCase() === "beginner"
-    ? "skillLevelLow"
+    ? "skillLevelLowDT"
     : level.toLocaleLowerCase() === "intermediate"
-    ? "skillLevelMed"
+    ? "skillLevelMedDT"
     : level.toLocaleLowerCase() === "advanced"
-    ? "skillLevelHigh"
-    : "skillLevelExpert"
+    ? "skillLevelHighDT"
+    : "skillLevelExpertDT"
 }
 
 export function DataTable<TData, TValue>({

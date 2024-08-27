@@ -25,18 +25,18 @@
     color: #fff;
 }
 
-.skillLevelLow {
+.skillLevelLowDT {
     color: #FFFF00;
 }
 
-.skillLevelMed {
+.skillLevelMedDT {
     color: #FFA500;
 }
 
-.skillLevelHigh {
+.skillLevelHighDT {
     color: #008000;
 }
 
-.skillLevelExpert {
+.skillLevelExpertDT {
     color: #800080;
 }
