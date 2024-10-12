@@ -14,10 +14,10 @@ type PythonProject = {
 export const pythonRoboticsData: PythonProject[] = [
     {
         title: "NAO Robot Syncronization",
-        description: "Synchronized two NAO robots to perform an action or dance routine together.",
+        description: "Synchronized two NAO robots to perform various actions & dance routines together.",
         dateStarted: "August 2019",
         dateFinished: "May 2023",
-        status: "Mostly Completed",
+        status: "Completed with Limitations",
         link: "...",
         githubLink: "...",
         image: "...",

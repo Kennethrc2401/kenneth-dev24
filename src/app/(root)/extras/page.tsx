@@ -50,7 +50,7 @@ const page = (props: Props) => {
           </div>
 
           {/* Code Snippets */}
-          <div className="w-full md:w-1/3 p-4">
+          {/* <div className="w-full md:w-1/3 p-4">
             <div className="extrasSubContainer3 bg-white shadow-md rounded p-4">
               <CodeIcon
                 size={48}
@@ -64,11 +64,11 @@ const page = (props: Props) => {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="w-full md:w-1/3 p-4">
+          {/* Games */}
+          {/* <div className="w-full md:w-1/3 p-4">
             <div className="extrasSubContainer3 bg-white shadow-md rounded p-4">
-              {/* Games List Section*/}
               <Gamepad2
                 size={48}
                 className="text-blue-500"
@@ -81,7 +81,8 @@ const page = (props: Props) => {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
+
         </div>
       </div>
       <Footer />

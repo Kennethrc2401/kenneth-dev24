@@ -83,7 +83,7 @@ const ResumeComponent = (props: Props) => {
                     <p>{`Minor: ${edu.minor}`}</p>
                     <p>{`Grade: ${edu.currentGrade}`}</p>
                     <p>{edu.startDate} - {edu.graduation}</p>
-                    <p>GPA: {edu.gpa}</p>
+                    {/* <p>GPA: {edu.gpa}</p> */}
                     
                     <p>{edu.activities}</p>
                     <p>{edu.description}</p>

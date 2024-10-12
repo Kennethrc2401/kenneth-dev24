@@ -6,19 +6,24 @@ type Skill = {
 
 export const skillsData: Skill[] = [
     {
+        name: "C#",
+        level: "Beginner",
+        yearsExperience: 1,
+    },
+    {
         name: "HTML",
         level: "Intermediate",
-        yearsExperience: 7,
+        yearsExperience: 8,
     },
     {
         name: "CSS",
         level: "Intermediate",
-        yearsExperience: 7,
+        yearsExperience: 8,
     },
     {
         name: "JavaScript",
         level: "Intermediate",
-        yearsExperience: 5,
+        yearsExperience: 5.5,
     },
     {
         name: "UI Design",
@@ -33,22 +38,22 @@ export const skillsData: Skill[] = [
     {
         name: "Frontend",
         level: "Intermediate",
-        yearsExperience: 5,
+        yearsExperience: 6,
     },
     {
         name: "Backend",
         level: "Intermediate",
-        yearsExperience: 2,
+        yearsExperience: 3,
     },
     {
         name: "React JS",
         level: "Intermediate",
-        yearsExperience: 5,
+        yearsExperience: 6,
     },
     {
         name: "TypeScript",
         level: "Intermediate",
-        yearsExperience: 3.5,
+        yearsExperience: 4,
     },
     {
         name: "Python",
@@ -58,7 +63,7 @@ export const skillsData: Skill[] = [
     {
         name: "Django",
         level: "Beginner",
-        yearsExperience: 1,
+        yearsExperience: 0.5,
     },
     {
         name: "SQL",
@@ -68,7 +73,7 @@ export const skillsData: Skill[] = [
     {
         name: "MongoDB",
         level: "Intermediate",
-        yearsExperience: 2,
+        yearsExperience: 3,
     },
     {
         name: "Express",
@@ -78,17 +83,17 @@ export const skillsData: Skill[] = [
     {
         name: "Node JS",
         level: "Intermediate",
-        yearsExperience: 4.5,
+        yearsExperience: 5,
     },
     {
         name: "Git",
         level: "Intermediate",
-        yearsExperience: 6,
+        yearsExperience: 7,
     },
     {
         name: "GitHub",
         level: "Advanced",
-        yearsExperience: 6,
+        yearsExperience: 8,
     },
     {
         name: "Docker",
@@ -128,7 +133,7 @@ export const skillsData: Skill[] = [
     {
         name: "Bash",
         level: "Intermediate",
-        yearsExperience: 3,
+        yearsExperience: 4,
     },
     {
         name: "Spanish",
@@ -153,7 +158,7 @@ export const skillsData: Skill[] = [
     {
         name: "Next JS",
         level: "Beginner",
-        yearsExperience: 1.5,
+        yearsExperience: 2,
     },
     {
         name: "Tailwind CSS",
@@ -163,7 +168,7 @@ export const skillsData: Skill[] = [
     {
         name: "Microsoft Office",
         level: "Advanced",
-        yearsExperience: 10,
+        yearsExperience: 11,
     },
     {
         name: "Kubernetes",
@@ -183,12 +188,12 @@ export const skillsData: Skill[] = [
     {
         name: "Teamwork",
         level: "Advanced",
-        yearsExperience: 10,
+        yearsExperience: 11,
     },
     {
         name: "Robotics",
         level: "Intermediate",
-        yearsExperience: 6.5,
+        yearsExperience: 7,
     },
     {
         name: "Machine Learning",

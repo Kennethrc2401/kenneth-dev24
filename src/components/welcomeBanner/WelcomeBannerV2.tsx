@@ -26,7 +26,7 @@ const WelcomeBannerV2 = (props: Props) => {
                 Welcome to my portfolio
             </h1>
             <p className={desktopStyles.welcomeBannerSubtitle}>
-                I am a frontend developer with a passion for web design and development
+                I am a fullstack developer with a passion for building web applications.
             </p>
             <div >
                 <Button

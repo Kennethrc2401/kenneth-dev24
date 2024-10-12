@@ -11,6 +11,16 @@ type Project = {
 };
 export const projectData: Project[] = [
     {
+        title: "Mern Eats",
+        dateCreated: "October 12, 2024",
+        description: "Mern Eats is a full-stack MERN app that allows users to search for restaurants, create their own restaurants, place orders, and update orders. Powered by: TypeScript, OAuth, Stripe, MongoDB, Express, Node JS, React, Tailwind CSS, Vite, and Render.com",
+        link: "https://food-ordering-app-frontend-mfj7.onrender.com/",
+        repository: "https://github.com/Kennethrc2401/food-ordering-app-frontend/tree/main",
+        image: `${pthPrefix}MernEats2024.png`,
+        alt: "Mern Eats",
+        tags: ["React", "Typescript", "Tailwind CSS", "Vite", "Render", "OAuth", "Stripe", "MongoDB", "Express", "Node JS", "Full Stack", "MERN", "API"],
+    },
+    {
         title: "EvoGym",
         dateCreated: "January 26, 2024",
         description: "Evogym is a fitness app that represents a gym's website. It showcases the gym's services and classes, and also has a fully functioning contact form. The app is built with React, Typescript, and Tailwind CSS. This app is hosted on Heroku.",
