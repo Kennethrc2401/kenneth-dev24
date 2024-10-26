@@ -11,6 +11,16 @@ type Project = {
 };
 export const projectData: Project[] = [
     {
+        title: "Slack Mini",
+        dateCreated: "October 25, 2024",
+        description: "Slack Mini is a simplified version of Slack that allows users to create channels, send messages, and upload files. The app is built with Next JS, Tailwind CSS, and Convex db. This app is hosted on Vercel.",
+        link: "https://slack-mini.vercel.app/workspace/kn70w6pwsfxxs5r68jqb6nqrc573c1q0/channel/jx7ekvy91shf5b7va88n0pxbed73cfrz",
+        repository: "https://github.com/Kennethrc2401/slack-mini",
+        image: `${pthPrefix}Slack_Mini.png`,
+        alt: "Slack Mini",
+        tags: ["Next JS", "Tailwind CSS", "Vercel", "Convex db", "Full Stack", "React", "Node JS", "JavaScript", "API"],
+    },
+    {
         title: "Mern Eats",
         dateCreated: "October 12, 2024",
         description: "Mern Eats is a full-stack MERN app that allows users to search for restaurants, create their own restaurants, place orders, and update orders. Powered by: TypeScript, OAuth, Stripe, MongoDB, Express, Node JS, React, Tailwind CSS, Vite, and Render.com",
