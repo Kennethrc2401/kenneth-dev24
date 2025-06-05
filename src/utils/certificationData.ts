@@ -8,6 +8,27 @@ type Certification = {
 
 export const certificationData: Certification[] = [
     {
+        title: "Basic Life Support (BLS)",
+        company: "Brooks CPR & American Heart Association",
+        date: "June 6, 2025",
+        description: [
+            "Completed Basic Life Support (BLS) training, focusing on CPR techniques and emergency response.",
+            "AED (Automated External Defibrillator) training included.",
+            "Learned to recognize and respond to cardiac emergencies.",
+            "Gained skills in high-quality chest compressions and rescue breaths.",
+        ],
+        skills: [
+            "CPR", 
+            "AED", 
+            "Emergency Response",
+            "Cardiac Emergencies",
+            "Chest Compressions",
+            "Rescue Breaths",
+            "First Aid",
+            "Basic Life Support",
+        ],
+    },
+    {
         title: "Build Websites from Scratch",
         company: "Codecademy",
         date: "Febraury 13, 2018",

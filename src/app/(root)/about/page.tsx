@@ -36,7 +36,7 @@ const About = (props: Props) => {
 
         <div className="aboutTextContainer vscode-format">
           <h1 className="aboutName">Sophia Amanda Ramirez</h1>
-          <h2 className="aboutPronouns">She/Her/They/Them</h2>
+          <h2 className="aboutPronouns">She/Her/Hers</h2>
           <h2 className="aboutTitle">Software Engineer</h2>
           <h3 className="aboutLocation">New York City, NY</h3>
           <p className="aboutParagraph">

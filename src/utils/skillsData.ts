@@ -58,7 +58,7 @@ export const skillsData: Skill[] = [
     {
         name: "Python",
         level: "Intermediate",
-        yearsExperience: 7,
+        yearsExperience: 7.5,
     },
     {
         name: "Django",
@@ -93,15 +93,10 @@ export const skillsData: Skill[] = [
     {
         name: "GitHub",
         level: "Advanced",
-        yearsExperience: 8,
+        yearsExperience: 8.5,
     },
     {
         name: "Docker",
-        level: "Beginner",
-        yearsExperience: 1,
-    },
-    {
-        name: "Kubernetes",
         level: "Beginner",
         yearsExperience: 1,
     },
@@ -123,7 +118,7 @@ export const skillsData: Skill[] = [
     {
         name: "Heroku",
         level: "Beginner",
-        yearsExperience: 2,
+        yearsExperience: 3,
     },
     {
         name: "Linux",
@@ -158,7 +153,7 @@ export const skillsData: Skill[] = [
     {
         name: "Next JS",
         level: "Beginner",
-        yearsExperience: 2,
+        yearsExperience: 3,
     },
     {
         name: "Tailwind CSS",
@@ -224,5 +219,65 @@ export const skillsData: Skill[] = [
         name: "OpenPyXL",
         level: "Intermediate",
         yearsExperience: 2,
+    },
+    {
+        name: "Matlab",
+        level: "Beginner",
+        yearsExperience: 1,
+    },
+    {
+        name: "Prompt Engineering",
+        level: "Intermediate",
+        yearsExperience: 3,
+    },
+    {
+        name: "Artificial Intelligence",
+        level: "Beginner",
+        yearsExperience: 2,
+    },
+    {
+        name: "Android Studio",
+        level: "Beginner",
+        yearsExperience: 1.5,
+    },
+    {
+        name: "Adobe Photoshop",
+        level: "Beginner",
+        yearsExperience: 3,
+    },
+    {
+        name: "Adobe Illustrator",
+        level: "Beginner",
+        yearsExperience: 2,
+    },
+    {
+        name: "Figma",
+        level: "Beginner",
+        yearsExperience: 1.5,
+    },
+    {
+        name: "Adobe XD",
+        level: "Beginner",
+        yearsExperience: 1,
+    },
+    {
+        name: "Canva",
+        level: "Beginner",
+        yearsExperience: 1,
+    },
+    {
+        name: "Adobe After Effects",
+        level: "Beginner",
+        yearsExperience: 1,
+    },
+    {
+        name: "Adobe Premiere Pro",
+        level: "Beginner",
+        yearsExperience: 3,
+    },
+    {
+        name: "Sony Vegas Pro",
+        level: "Beginner",
+        yearsExperience: 5,
     }
 ];

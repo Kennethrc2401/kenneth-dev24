@@ -9,14 +9,49 @@ type Experience = {
 
 export const experienceData: Experience[] = [
     {
+        title: "Industrial Automation & Robotics Laboratory Assistant",
+        company: "Gildart Haase School of Computer Sciences & Engineering",
+        location: "Teaneck, NJ",
+        date: "Aug 2019 - Present",
+        description: [
+            "Collaborate in a cutting-edge robotics laboratory to program NAO humanoid AI robots using Python for various interactive demonstrations, including choreographed dances, yoga, facial recognition, and conversational interactions presented during university classes, outreach workshops, and lab tours.",
+            "Train and mentor undergraduate and graduate students in robotics programming and deployment methodologies, fostering hands-on learning and technical fluency. Maintained and troubleshot lab infrastructure, ensuring continuous operability of robotic systems and computing hardware across campus.",
+            "Contribute to advanced projects involving AR/VR simulations, 3D modeling for robotic interaction environments, and Unitree Go2 AI robot dog programming, expanding the lab’s capabilities into immersive and agile robotics applications."
+        ],
+        skills: [
+            "Python", 
+            "NAO Robots", 
+            "Robotics", 
+            "Lab Assistant", 
+            "Teaching", 
+            "Training", 
+            "Equipment Maintenance", 
+            "Delivery",
+            "Software Development",
+            "Microsoft Office",
+            "Git",
+            "Problem Solving",
+            "Teamwork",
+            "Communication",
+            "Time Management",  
+            "AR/VR Simulations",
+            "3D Modeling",
+            "Unitree Go2 AI Robot Dog Programming",
+            "Robotic Interaction Environments"
+        ]
+    },
+    {
         title: "Python Software Developer with Unclassified Clearance",
         company: "U.S. Army -- Picatinny Arsenal DEVCOM AC-CCDC -- Army Enrichment Outreach Program Apprenticeship",
         location: "Unclassified",
         date: "Jun 2023 - Aug 2023",
         description: [
-            "Developed a web application for the school's website using React, TypeScript, and Material-UI.",
-            "Worked with the school's IT team to maintain and update the school's website.",
-            "Assisted with the development of the school's mobile app using React Native."
+            "System Health & Interactive Future Technologies (SHIFT)",
+            "Develop Python scripts to enhance existing methodologies for assessing the performance of combat and transportation vehicle systems while also facilitating the identification and diagnosis of any potential faults",
+            "Employ Python documentation and libraries such as Pandas, NumPy, Tkinter, Openpyxl, Matplotlib, and Pycdf",
+            "Proficiently employ specialized test kits to systematically identify and diagnose faults in remote weapon systems",
+            "Undertake the design and development of a Python-based graphical user interface (GUI) application dedicated to the diagnostic analysis of vehicle faults",
+            "Utilized Gitlabs, JIRA, & Qt"
         ],
         skills: [
             "Python",
@@ -40,29 +75,6 @@ export const experienceData: Experience[] = [
             "User Interface Design",
             "Jira",
             "GitLab",
-        ]
-    },
-    {
-        title: "Automation & Robotics Laboratory Assistant",
-        company: "Gildart Haase School of Computer Sciences & Engineering",
-        location: "Teaneck, NJ",
-        date: "Aug 2019 - Present",
-        description: [
-            "Work as part of a robotics lab team. Use Python to program NAO humanoid AI robots to perform: Dances, yoga, facial recognition, greetings, and tasks to demonstrate for college classes, and high school student workshops, and for lab tours.",
-            "Train graduate and undergraduate students in how to program the NAO Robots.",
-            "Monitor and maintain equipment and help deliver computer equipment and other packages on the campus."
-        ],
-        skills: [
-            "Python", 
-            "NAO Robots", 
-            "Robotics", 
-            "Lab Assistant", 
-            "Teaching", 
-            "Training", 
-            "Equipment Maintenance", 
-            "Delivery",
-            "Software Development",
-            "Microsoft Office"
         ]
     },
     {
@@ -90,11 +102,11 @@ export const experienceData: Experience[] = [
         location: "Remote",
         date: "May 2022 - Aug 2022",
         description: [
-            "Learn about Frontend and Backend Technologies used in Software Development such as React JS, Node JS, Material UI, IBM Cloud, Kubernetes, SDLC, and more.",
-            "Build a front-end Web App leveraging HTML, CSS, React, and MUI.",
-            "Used Git as a version control tool.",
-            "Worked in teams and networked with fellow IBMers.",
-            "Grew programming skills while enhancing core competencies and understanding of coding platforms.",
+            "Embark on a comprehensive exploration of Frontend and Backend Technologies central to Software Development, encompassing technologies like React JS, Node JS, Material UI, IBM Cloud, Kubernetes, SDLC, and a myriad of other essential tools and frameworks",
+            "Craft a cutting-edge front-end Web Application harnessing the power of HTML, CSS, React, and the Modern UI (MUI) framework.",
+            "Employ Git as a robust version control tool.",
+            "Continuously cultivate programming expertise while enriching core competencies and deepening comprehension of coding platforms.",
+            "Foster valuable professional connections among peers at IBM and collaborate seamlessly within a team-oriented environment."
         ],
         skills: [
             "Frontend", 
@@ -118,8 +130,9 @@ export const experienceData: Experience[] = [
         location: "Hackensack, NJ",
         date: "Jul 2021 - Aug 2021 & Jun 2022 - Jun 2023",
         description: [
-            "Greeted and checked in members, provided tours, signed up new members, and sold memberships.",
-            "Assisted in maintaining the cleanliness of the club.",
+            "Assist Planet Fitness members and customers with their needs",
+            "Maintain a Clean, Healthy, and Welcoming environment for everyone",
+            "Check equipment for any faults and create support tickets",
         ],
         skills: [
             "Sales", 
